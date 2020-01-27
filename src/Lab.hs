@@ -28,9 +28,9 @@ powersOfTwo = [2^n | n <- [1..10]]
 -- 5. Using a list comprehension, define a list of the factorials of the
 -- numbers 1 to 10.
 factorials :: [Int]
-factorials = 
+factorials = [fac x | x <- [1..10]]
     where
-        fac = [x | x <- [1..10]]
+        fac n = product [1..n]
 
 -- 6. Using a list comprehension, define a list of coordinates where the top
 -- left corner is (0,0) and the bottom right is (10,10).
